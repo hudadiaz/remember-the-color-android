@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zaidhuda.rememberthecolor.fragments.MenuFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="36dp"
+        android:id="@+id/container">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/app_name"
+            android:textSize="48sp"
+            android:gravity="center"
+            android:paddingBottom="80dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="BEST"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/best_score_text"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/duration_text"
+            android:layout_gravity="center_horizontal" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/duration_seekBar"
+            android:indeterminate="false" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button_groups"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="48sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/start_button"
+                android:drawableStart="@drawable/ic_play_arrow_white_48dp"
+                android:drawableLeft="@drawable/ic_play_arrow_white_48dp"
+                android:background="@null" />
+
+            <Button
+                android:layout_width="48sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/noob_button"
+                android:drawableStart="@drawable/ic_help_white_48dp"
+                android:drawableLeft="@drawable/ic_help_white_48dp"
+                android:background="@null" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
